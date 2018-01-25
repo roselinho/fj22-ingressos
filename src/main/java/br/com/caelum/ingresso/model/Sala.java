@@ -44,6 +44,7 @@ public class Sala {
 
     public Sala(String nome, BigDecimal preco) {
         this.nome = nome;
+        this.preco = preco;
     }
 
     public BigDecimal getPreco() {
