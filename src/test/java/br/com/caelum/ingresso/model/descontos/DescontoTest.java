@@ -7,7 +7,8 @@ import java.time.LocalTime;
 
 
 
-import org.junit.Assert;
+import junit.framework.Assert;
+
 import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
@@ -25,7 +26,7 @@ public class DescontoTest {
 		Sessao sessao = new Sessao(LocalTime.parse("10:00:00"), filme, sala);
 		Ingresso ingresso = new Ingresso(sessao, new SemDesconto());
 		
-		BigDecimal precoEsperado = new BigDecimal("32.5");
+		BigDecimal precoEsperado = new BigDecimal("32.50");
 		
 		Assert.assertEquals(precoEsperado, ingresso.getPreco());
 	}
