@@ -26,6 +26,6 @@ public class SessaoDao {
 	}
 	
 	public List<Sessao> buscaSessoesDoFilme(Filme filme) {
-		return manager.createQuery("select s from Sessap s where s.filme = :filme", Sessao.class).setParameter("filme", filme).getResultList();
+		return manager.createQuery("select s from Sessao s where s.filme = :filme", Sessao.class).setParameter("filme", filme).getResultList();
 	}
 }
