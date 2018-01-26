@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
 
-import junit.framework.Assert;
 
+
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
