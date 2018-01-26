@@ -20,7 +20,7 @@ public class Filme {
     private String nome;
     private Duration duracao;
     private String genero;
-    private BigDecimal preco = new BigDecimal("0.01");
+    private BigDecimal preco = new BigDecimal("0.00");
     
     
     
@@ -35,6 +35,7 @@ public class Filme {
 		this.nome = nome;
 		this.duracao = duracao;
 		this.genero = genero;
+		this.preco = preco;
 	}
 
 	public BigDecimal getPreco() {

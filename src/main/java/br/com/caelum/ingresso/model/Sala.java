@@ -33,7 +33,7 @@ public class Sala {
     @OneToMany(fetch = FetchType.EAGER)
     private List<Lugar> lugares = new ArrayList<>();
     
-    private BigDecimal preco = new BigDecimal("0.01");
+    private BigDecimal preco = new BigDecimal("0.00");
 
     /**
      * @deprecated hibernate only
